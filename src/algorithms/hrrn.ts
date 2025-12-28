@@ -23,7 +23,7 @@ export function scheduleHRRN(processes: Process[]): SchedulingResult {
       const nextArrival = Math.min(
         ...processResults
           .map((p, i) => ({ p, i }))
-          .filter(({ p, i }) => !completed[i])
+          .filter(({ i }) => !completed[i])
           .map(({ p }) => p.arrivalTime)
       );
       currentTime = nextArrival;

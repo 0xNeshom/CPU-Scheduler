@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Play, RotateCcw, Sun, Moon } from 'lucide-react';
 import { GanttChart } from './Components/GanttChart';
 import { scheduleSJF } from './algorithms/sjf';
